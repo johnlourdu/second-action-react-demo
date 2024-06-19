@@ -1,5 +1,5 @@
 name: Test Project
-on: push
+on: [push, workflow_dispatch]
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -30,5 +30,3 @@ jobs:
         run: npm run build
       - name: Deploy
         run: echo "Deploying"
-      - name: I LOVE SHALU
-        run: echo "I LOVE SHALU"
